@@ -4,10 +4,10 @@ import React from 'react'
 const StyleSheet_l20 = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.lightbluebox}>
+      <View style={[styles.box, styles.lightblueBg]}>
         <Text>Lightblue box</Text>
       </View>
-      <View style={styles.lightgreenbox}>
+      <View style={[styles.box, styles.lightgreenBg]}>
         <Text>Lightgreen box</Text>
       </View>
     </View>
@@ -22,16 +22,16 @@ const styles = StyleSheet.create({
         backgroundColor: "lightyellow",
         padding: 60
     },
-    lightbluebox: {
-        backgroundColor: "lightblue",
+    box: {
         width: 100,
         height: 100,
         padding: 10,
     },
-    lightgreenbox: {
+    lightblueBg: {
+        backgroundColor: "lightblue",
+
+    },
+    lightgreenBg: {
         backgroundColor: "lightgreen",
-        width: 100,
-        height: 100,
-        padding: 10,
     }
 })
